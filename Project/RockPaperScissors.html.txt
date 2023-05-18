@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamestyle.css">
+    <title>RockPaperScissors</title>
+</head>
+<body>
+    <div class="Main">
+        <div class="images">
+        <div class="Img-cont" onclick="
+            GAME('rock');
+            ">
+            <img src="Pics/rock-emoji.png" alt="" class="pic">
+        </div>
+        <div class="Img-cont" onclick="
+        GAME('paper');
+        ">
+            <img src="Pics/paper-emoji.png" alt="" class="pic">
+        </div>
+        <div class="Img-cont" onclick="
+        GAME('scissors');
+        ">
+            <img src="Pics/scissors-emoji.png" alt="" class="pic">
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="Count">
+      <div class="user_pick"></div>
+      <div class="cpu_pick"></div>
+  </div>
+    <script src="Game.js"></script>
+</body>
+</html>
