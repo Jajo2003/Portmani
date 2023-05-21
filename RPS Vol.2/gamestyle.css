@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pic{
+    width: 80px;
+    height: 80px;
+}
+.Img-cont{
+    display: inline-block;
+    padding: 15px 15px;
+    border:2px solid white;
+    border-radius:120px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Count{
+    color:white;
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+.count div{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.user_pick{
+  width: 80px;
+  height: 80px;
+}
+.scoreboard{
+    margin-top:100px;
+    color:white;
+}
+.clear{
+    margin-top: 50px;
+    height: 40px;
+    width: 250px;
+    background-color:gray;
+    cursor: pointer;
+    border:none;
+    border-radius: 4px;
+    color:white;
+    font-size: 18px;
+transition: 0.2s;
+}
+.clear:hover{
+    opacity: 0.7;
+}
