@@ -39,5 +39,6 @@ console.log(cards.length)
 
 function create(a){
   let a=document.createElement('div');
+  smth.innerHTML='<img src="' + cards[0].img + '">';
   a.innerHTML=newarr[a];
 }
