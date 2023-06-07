@@ -26,19 +26,3 @@ const cards = [
   },
 
 ]
-let counter=0;
-const smth=document.querySelector('.a');
-smth.innerHTML='<img src="' + cards[0].img + '">';
-
-let newarr = [
-];
-for(let i=0;i<cards.length;i++){
-  newarr[i]='<img src="' + cards[i].img + '">';
-}
-console.log(cards.length)
-
-function create(b){
-  let a=document.createElement('div');
-  smth.innerHTML='<img src="' + cards[0].img + '">';
-  a.innerHTML=newarr[b];
-}
