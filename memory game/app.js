@@ -37,8 +37,8 @@ for(let i=0;i<cards.length;i++){
 }
 console.log(cards.length)
 
-function create(a){
+function create(b){
   let a=document.createElement('div');
   smth.innerHTML='<img src="' + cards[0].img + '">';
-  a.innerHTML=newarr[a];
+  a.innerHTML=newarr[b];
 }
