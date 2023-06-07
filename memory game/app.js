@@ -106,5 +106,5 @@ function winner(){
   document.body.innerHTML='Moigeee';
 }
 function rickroll(){
-location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
+location.href='https://www.youtube.com/watch?v=niwAlnT4gWo&ab_channel=TVIMEDI';
 }
