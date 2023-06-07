@@ -1,0 +1,11 @@
+body{
+  background-color: rgb(51, 47, 47);
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#grid{
+  display:flex;
+ width: 400px;
+ height: 300px;
+ flex-wrap: wrap;
+}
