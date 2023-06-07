@@ -93,11 +93,18 @@ function Flip(){
   chosecardsid.push(cardid)
   console.log('Clickeed',cardid);
   if(chosencards.length === 2){
-    setTimeout(checkmatch,800);
+    setTimeout(checkmatch,400);
   }
 }
 function checkwin(){
   if(cardswon.length === cards.length/2){
-    location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
+    setTimeout(winner,2000);
+    setTimeout(rickroll,2000);
   }
+}
+function winner(){
+  document.body.innerHTML='Moigeee';
+}
+function rickroll(){
+location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
 }
