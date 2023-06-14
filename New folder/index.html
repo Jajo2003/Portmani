@@ -12,7 +12,7 @@
 <body>
     <div class="Main">
         <div class="Player">
-            <div class="pic-cont">
+            <div id="pic-cont">
                 <img src="picsandmp3/2pac.jpg" alt="2-pac" class="pic" >
             </div>
             <div class="listener">
@@ -25,7 +25,9 @@
             <audio id="audioplay"></audio>
             <div class="icons">
                 <i class="fa-solid fa-backward  Play reload"></i>
-                <i class="fa-solid fa-play  Play pause"></i>
+                <i class="fa-solid fa-play  Play pause" onclick="
+                pause_play();
+                aaa();" id="switch"></i>
                 <i class="fa-solid fa-forward  Play reload"></i>
             </div>
         </div>
@@ -33,27 +35,37 @@
             <div class="song-cont">
                 <div class="song-name">Changes</div>
                 <div class="artist-name">2Pac</div>
-                <i class="fa-solid fa-play play2"></i>
+                <i class="fa-solid fa-play play2" id="0"onclick="
+                aaa(id);
+                "></i>
             </div>
             <div class="song-cont">
                 <div class="song-name">Praise The lord</div>
                 <div class="artist-name">Asap Rocky</div>
-                <i class="fa-solid fa-play play2"></i>
+                <i class="fa-solid fa-play play2" id="1"onclick="
+                aaa(id);
+                "></i>
             </div>
             <div class="song-cont">
                 <div class="song-name">U got that</div>
                 <div class="artist-name">Halogen</div>
-                <i class="fa-solid fa-play play2"></i>
+                <i class="fa-solid fa-play play2" id="2"onclick="
+                aaa(id);
+                "></i>
             </div>
             <div class="song-cont">
                 <div class="song-name">It was a good day</div>
                 <div class="artist-name">Ice Cube</div>
-                <i class="fa-solid fa-play play2"></i>
+                <i class="fa-solid fa-play play2" id="3" onclick="
+                aaa(id);
+                "></i>
             </div>
             <div class="song-cont">
-                <div class="song-name">It was a good day</div>
-                <div class="artist-name">Ice Cube</div>
-                <i class="fa-solid fa-play play2"></i>
+                <div class="song-name">Crucified</div>
+                <div class="artist-name">Army of Lovers</div>
+                <i class="fa-solid fa-play play2" id="4"onclick="
+                aaa(id);
+                "></i>
             </div>
         </div>
     </div>
