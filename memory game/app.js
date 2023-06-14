@@ -69,7 +69,15 @@ let chosencards = [];
 let chosecardsid = [];
 function checkmatch(){
   const kartebi=document.querySelectorAll('img');
-  if(chosencards[0] === chosencards[1]){
+  let a1 = chosecardsid[0];
+  let a2= chosecardsid[1];
+  
+  if(a1 === a2 ){
+    kartebi[a1].setAttribute('src', 'images/blank.png');
+    kartebi[a2].setAttribute('src', 'images/blank.png');
+    alert('Erti da igives ra pontshi acher dzmi!!!');
+  }
+  else if(chosencards[0] === chosencards[1]){
     kartebi[chosecardsid[0]].setAttribute('src','images/white.png');
     kartebi[chosecardsid[1]].setAttribute('src','images/white.png');
     kartebi[chosecardsid[0]].removeEventListener('click',Flip);
@@ -106,5 +114,5 @@ function winner(){
   document.body.innerHTML='Moigeee';
 }
 function rickroll(){
-location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
+location.href='https://www.youtube.com/watch?v=niwAlnT4gWo&ab_channel=TVIMEDI';
 }

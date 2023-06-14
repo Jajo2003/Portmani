@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="Main">
+        <div class="Player">
+            <div class="pic-cont">
+                <img src="picsandmp3/2pac.jpg" alt="2-pac" class="pic" >
+            </div>
+            <div class="listener">
+                <div class="music">
+                    <input type="range" class="music-range" value="0">
+                </div>
+                <div class="duration"></div>
+            </div>
+            <input type="hidden" value="sc.mp3" id="audioFile">
+            <audio id="audioplay"></audio>
+            <div class="icons">
+                <i class="fa-solid fa-backward  Play reload"></i>
+                <i class="fa-solid fa-play  Play pause"></i>
+                <i class="fa-solid fa-forward  Play reload"></i>
+            </div>
+        </div>
+        <div class="Songs">
+            <div class="song-cont">
+                <div class="song-name">Changes</div>
+                <div class="artist-name">2Pac</div>
+                <i class="fa-solid fa-play play2"></i>
+            </div>
+            <div class="song-cont">
+                <div class="song-name">Praise The lord</div>
+                <div class="artist-name">Asap Rocky</div>
+                <i class="fa-solid fa-play play2"></i>
+            </div>
+            <div class="song-cont">
+                <div class="song-name">U got that</div>
+                <div class="artist-name">Halogen</div>
+                <i class="fa-solid fa-play play2"></i>
+            </div>
+            <div class="song-cont">
+                <div class="song-name">It was a good day</div>
+                <div class="artist-name">Ice Cube</div>
+                <i class="fa-solid fa-play play2"></i>
+            </div>
+            <div class="song-cont">
+                <div class="song-name">It was a good day</div>
+                <div class="artist-name">Ice Cube</div>
+                <i class="fa-solid fa-play play2"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
