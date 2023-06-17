@@ -29,6 +29,7 @@ body{
     border-radius: 75px;
     margin-bottom:70px;
     object-fit: cover;
+    border: none;
 }
 .Player{
     display: flex;
@@ -86,8 +87,7 @@ body{
     margin-bottom: 10px;
 
 }
-.music-range{
-    color:red;
+#music-range{
     width: 250px;
     margin-bottom:20px;
 }
@@ -100,4 +100,32 @@ body{
 .pause:hover,.reload:hover{
     opacity:0.5;
 }
-
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.rotation{
+    animation: rotate 8s linear infinite;
+}
+.listener{
+    display: flex;
+    gap:20px;
+    font-size: 15px;
+}
+.song-cont_active{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size:20px;
+    position: relative;
+    box-shadow: 2px 2px 4px 3px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(25, 55, 65);
+}

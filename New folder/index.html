@@ -7,27 +7,31 @@
     <title>Player</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+    <script src="audio.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="Main">
         <div class="Player">
             <div id="pic-cont">
-                <img src="picsandmp3/2pac.jpg" alt="2-pac" class="pic" >
+                <img class="pic">
+                start listening
             </div>
             <div class="listener">
                 <div class="music">
-                    <input type="range" class="music-range" value="0">
+                    <input type="range" id="music-range" value="0">
                 </div>
-                <div class="duration"></div>
+                <div id="duration"></div>
             </div>
-            <input type="hidden" value="sc.mp3" id="audioFile">
-            <audio id="audioplay"></audio>
+            <audio id="audioplay">
+                
+            </audio>
             <div class="icons">
                 <i class="fa-solid fa-backward  Play reload"></i>
-                <i class="fa-solid fa-play  Play pause" onclick="
-                pause_play();
-            " id="switch"></i>
+                <i class="fa-solid fa-play  Play pause"id="switch" onclick="
+                
+                
+                "></i>
                 <i class="fa-solid fa-forward  Play reload"></i>
             </div>
         </div>
@@ -36,7 +40,8 @@
                 <div class="song-name">Changes</div>
                 <div class="artist-name">2Pac</div>
                 <i class="fa-solid fa-play play2" id="0"onclick="
-                aaa(id);
+                
+                pause_play(id);
                 "></i>
             </div>
             <div class="song-cont">
@@ -44,6 +49,7 @@
                 <div class="artist-name">Asap Rocky</div>
                 <i class="fa-solid fa-play play2" id="1"onclick="
                 aaa(id);
+                pause_play(id);
                 "></i>
             </div>
             <div class="song-cont">
@@ -51,6 +57,7 @@
                 <div class="artist-name">Halogen</div>
                 <i class="fa-solid fa-play play2" id="2"onclick="
                 aaa(id);
+                pause_play(id);
                 "></i>
             </div>
             <div class="song-cont">
@@ -58,6 +65,7 @@
                 <div class="artist-name">Ice Cube</div>
                 <i class="fa-solid fa-play play2" id="3" onclick="
                 aaa(id);
+                pause_play(id);
                 "></i>
             </div>
             <div class="song-cont">
@@ -65,6 +73,7 @@
                 <div class="artist-name">Army of Lovers</div>
                 <i class="fa-solid fa-play play2" id="4"onclick="
                 aaa(id);
+                pause_play(id);
                 "></i>
             </div>
         </div>
