@@ -42,7 +42,7 @@ function game(){
     })
   })
   function shotodadis(){
-      tamashi=setInterval(randomSqr,500);
+      tamashi=setInterval(randomSqr,300);
   }
   shotodadis();
   function ukutvla(){
