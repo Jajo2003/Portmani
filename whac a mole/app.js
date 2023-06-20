@@ -18,7 +18,7 @@ startgame.addEventListener('click',function(){
 })
 
 function game(){
-  startgame.textContent = 'warmatebuli tamashi';
+  startgame.textContent = 'წარმატებები';
  
   function randomSqr(){
   squares.forEach(b =>{
@@ -51,7 +51,7 @@ function game(){
     if(tamashis_dro === 0){
       clearInterval(ukutvlis_dro);
       clearInterval(tamashi);
-      startgame.textContent = 'Etamashe botikos';
+      startgame.textContent = 'დაიწყე თამაში';
       startgame.classList.remove('playing');
       startgame.classList.add('no-playing');
       alert('თამაში დასრულდა შენ შოთიკო დაიჭირე '+result+'-ჯერ');
