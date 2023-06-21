@@ -3,16 +3,18 @@ const qula = document.querySelector('#qula');
 const shoto = document.querySelector('.shoto')
 const dro = document.querySelector('#dro');
 const startgame = document.querySelector('#play-game');
-let result = 0;
-let tamashis_dro = 60;
+const shedegi = document.querySelector('#shedegi');
+let result;
+let tamashis_dro;
 let gartyma;
 let tamashi;
 startgame.addEventListener('click',function(){
   if(startgame.classList.contains('no-playing')){
     startgame.classList.remove('no-playing');
     startgame.classList.add('playing');
-    tamashis_dro=60;
+    tamashis_dro=10;
     result=0;
+    shedegi.textContent = 'შედეგი:';
     game();
   }
 })
@@ -54,7 +56,7 @@ function game(){
       startgame.textContent = 'დაიწყე თამაში';
       startgame.classList.remove('playing');
       startgame.classList.add('no-playing');
-      alert('თამაში დასრულდა შენ შოთიკო დაიჭირე '+result+'-ჯერ');
+      shedegi.textContent = 'თამაში დასრულდა შენ შოთიკო დაიჭირე '+result+'-ჯერ';
       tamashis_dro=60;
       result=0;
       qula.textContent="ქულია: "+result;
