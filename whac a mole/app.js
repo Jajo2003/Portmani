@@ -12,7 +12,7 @@ startgame.addEventListener('click',function(){
   if(startgame.classList.contains('no-playing')){
     startgame.classList.remove('no-playing');
     startgame.classList.add('playing');
-    tamashis_dro=10;
+    tamashis_dro=60;
     result=0;
     shedegi.textContent = 'შედეგი:';
     game();
